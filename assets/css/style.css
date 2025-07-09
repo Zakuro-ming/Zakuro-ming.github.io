@@ -1,0 +1,72 @@
+/* 基础样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.lang-switcher {
+    margin-bottom: 20px;
+}
+
+.lang-switcher button {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.lang-switcher button:hover {
+    background: #e0e0e0;
+}
+
+.blog-list article {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* 语言选择页专用样式 */
+.language-selector {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.language-selector .buttons {
+    margin-top: 30px;
+}
+
+.language-selector button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 0 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.language-selector button:hover {
+    background: #45a049;
+}
