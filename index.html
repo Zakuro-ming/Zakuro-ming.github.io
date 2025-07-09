@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-  <title>我的博客</title>
-  <style>
-    body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
-    nav { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
-    nav a { margin-right: 15px; }
-  </style>
+    <meta charset="UTF-8">
+    <title>我的多语言博客</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 导航栏 -->
-  <nav>
-    <a href="/">首页</a>
-    <a href="/about.html">关于我</a>
-    <a href="#" id="lang-toggle">English/中文</a>
-  </nav>
-  
-  <!-- 博客文章列表 -->
-  <h1>最新文章</h1>
-  <ul>
-    <li><a href="posts/post1.html">我的第一篇文章</a></li>
-    <li><a href="posts/post2.html">学习GitHub心得</a></li>
-  </ul>
-  
-  <!-- 简单语言切换脚本 -->
-  <script>
-    document.getElementById('lang-toggle').addEventListener('click', function() {
-      alert('多语言功能需扩展实现，后续可升级为专业方案');
-    });
-  </script>
+    <header>
+        <nav>
+            <a href="#" data-lang="zh">中文</a> | 
+            <a href="#" data-lang="en">English</a> | 
+            <a href="#" data-lang="ja">日本語</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- 内容会根据语言动态切换 -->
+        <section id="content">
+            <h1 id="title">欢迎来到我的博客</h1>
+            <article id="article">
+                <p>这是我的第一篇博客文章...</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="language.js"></script>
 </body>
 </html>
